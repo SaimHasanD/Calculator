@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <h1>Calculator Program in JavaScript</h1>
+    <div id="calculatorBody">
+        <table>
+            <tr>
+                <td colspan="4"><input type="text" id="myResult"></td>
+            </tr>
+
+            <tr>
+                <td><input onclick="deleteAll()" class="btn" type="button" value="C"></td>
+                <td><input onclick="backSpace()" class="btn" type="button" value="B"></td>
+                <td><input onclick="calculator('/')" class="btn" type="button" value="/"></td>
+                <td><input onclick="calculator('*')" class="btn" type="button" value="X"></td>
+            </tr>
+            <tr>
+                <td><input onclick="calculator(7)" class="btn" type="button" value="7"></td>
+                <td><input onclick="calculator(8)" class="btn" type="button" value="8"></td>
+                <td><input onclick="calculator(9)" class="btn" type="button" value="9"></td>
+                <td><input onclick="calculator('-')" class="btn" type="button" value="-"></td>
+            </tr>
+            <tr>
+                <td><input onclick="calculator(4)" class="btn" type="button" value="4"></td>
+                <td><input onclick="calculator(5)" class="btn" type="button" value="5"></td>
+                <td><input onclick="calculator(6)" class="btn" type="button" value="6"></td>
+                <td><input onclick="calculator('+')" class="btn" type="button" value="+"></td>
+            </tr>
+            <tr>
+                <td><input onclick="calculator(1)" class="btn" type="button" value="1"></td>
+                <td><input onclick="calculator(2)" class="btn" type="button" value="2"></td>
+                <td><input onclick="calculator(3)" class="btn" type="button" value="3"></td>
+                <td rowspan=5><input onclick="result()" style="height: 110px" class="btn" type="button" value="="></td>
+            </tr>
+            <tr>
+                <td colspan=2><input style="width: 110px" onclick="calculator(0)" class="btn" type="button" value="0"></td>
+                <td><input onclick="calculator('.')" class="btn" type="button" value="."></td>
+            </tr>
+    </div>
+</body>
+
+</html>
